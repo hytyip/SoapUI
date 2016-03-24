@@ -1,0 +1,39 @@
+2015-07-08 15:25:54,287 WARN  [SoapUI] Missing folder [C:\Users\TonyYip\workspace\SoapUI\.\ext] for external libraries
+2015-07-08 15:25:54,439 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\TonyYip\soapui-settings.xml]
+2015-07-08 15:25:54,742 WARN  [SoapUIProGroovyScriptEngineFactory] Missing scripts folder [C:\Users\TonyYip\workspace\SoapUI\scripts]
+2015-07-08 15:25:55,113 INFO  [WsdlProject] Loaded project from [file:/C:/Users/TonyYip/workspace/SoapUI/src/test/soapui/Getdocstatus-soapui-project.xml]
+2015-07-08 15:25:55,327 INFO  [TestSuitePropertiesModifier] Configuring test suite properties
+2015-07-08 15:25:55,327 INFO  [TestSuitePropertiesModifier] Test suite properties configuration done
+2015-07-08 15:25:55,327 INFO  [SoapUIProExtensionTestCaseRunner] Running SoapUI tests in project [Getdocstatus]
+2015-07-08 15:25:55,329 INFO  [SoapUIProExtensionTestCaseRunner] Running Project [Getdocstatus], runType = SEQUENTIAL
+2015-07-08 15:25:55,338 INFO  [SoapUIProExtensionTestCaseRunner] Running SoapUI testcase [TestCase 1]
+2015-07-08 15:25:55,345 INFO  [SoapUIProExtensionTestCaseRunner] running step [EDT_GetDocStatus - Request 1]
+2015-07-08 15:26:00,429 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-07-08 15:26:00,429 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [Not SOAP Fault] has status FAILED
+2015-07-08 15:26:00,429 ERROR [SoapUIProExtensionTestCaseRunner] ASSERTION FAILED -> Response is a SOAP Fault
+2015-07-08 15:26:00,429 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [XPath Match] has status FAILED
+2015-07-08 15:26:00,429 ERROR [SoapUIProExtensionTestCaseRunner] ASSERTION FAILED -> XPathContains assertion failed for path [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:EDT_GetDocStatusResult] : Exception:Missing content for xpath [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:EDT_GetDocStatusResult] in Response
+2015-07-08 15:26:00,429 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [XPath Match 1] has status FAILED
+2015-07-08 15:26:00,430 ERROR [SoapUIProExtensionTestCaseRunner] ASSERTION FAILED -> XPathContains assertion failed for path [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] : Exception:Missing content for xpath [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] in Response
+2015-07-08 15:26:00,430 ERROR [SoapUIProExtensionTestCaseRunner] EDT_GetDocStatus - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI/src/test/soapui/surefire-reports\TestSuite_1-TestCase_1-EDT_GetDocStatus__Request_1-0-FAILED.txt]
+2015-07-08 15:26:00,436 INFO  [SoapUIProExtensionTestCaseRunner] Finished running SoapUI testcase [TestCase 1], time taken: 5077ms, status: FAILED
+2015-07-08 15:26:00,436 INFO  [SoapUIProExtensionTestCaseRunner] Running SoapUI testcase [TestCase 2]
+2015-07-08 15:26:00,436 INFO  [SoapUIProExtensionTestCaseRunner] running step [EDT_GetDocStatus - Failure 1]
+2015-07-08 15:26:00,456 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-07-08 15:26:00,456 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [Not SOAP Fault] has status FAILED
+2015-07-08 15:26:00,456 ERROR [SoapUIProExtensionTestCaseRunner] ASSERTION FAILED -> Response is a SOAP Fault
+2015-07-08 15:26:00,456 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [XPath Match] has status FAILED
+2015-07-08 15:26:00,456 ERROR [SoapUIProExtensionTestCaseRunner] ASSERTION FAILED -> XPathContains comparison failed for path [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+substring(/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:rsErr,0,6)], expecting [Error], actual was []
+2015-07-08 15:26:00,456 ERROR [SoapUIProExtensionTestCaseRunner] EDT_GetDocStatus - Failure 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI/src/test/soapui/surefire-reports\TestSuite_1-TestCase_2-EDT_GetDocStatus__Failure_1-0-FAILED.txt]
+2015-07-08 15:26:00,459 INFO  [SoapUIProExtensionTestCaseRunner] Finished running SoapUI testcase [TestCase 2], time taken: 18ms, status: FAILED
+2015-07-08 15:26:00,460 INFO  [SoapUIProExtensionTestCaseRunner] Project [Getdocstatus] finished with status [FAILED] in 5128ms

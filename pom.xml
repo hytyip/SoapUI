@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SoapUI</groupId>
+  <artifactId>SoapUI</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <pluginRepositories>
+  	<pluginRepository>
+ 		<id>eviwarePluginRepository</id>
+ 		<url>http://www.eviware.com/repository/maven2/</url> 	
+  	</pluginRepository>
+  </pluginRepositories>
+  
+  <build>
+  <plugins>
+  	<plugin>
+  		<groupId>eviware</groupId>
+  		<artifactId>maven-soapui-plugin</artifactId>
+  		<version>3.6.1</version>
+  	</plugin> 
+  	<plugin> 		
+  		<groupId>com.github.redfish4ktc.soapui</groupId>
+  		<artifactId>maven-soapui-extension-plugin</artifactId>
+  		<version>4.6.4.2</version>
+  			<executions>
+  				<execution>
+  					<id>Getdocstatus</id>
+  					<goals>
+  						<goal>test</goal>
+  					</goals>
+  					<phase>test</phase>
+  				</execution>
+  			</executions>
+  			<configuration>
+  				<projectFile>${basedir}/src/test/soapui/Getdocstatus-soapui-project.xml</projectFile>
+  				<outputFolder>${basedir}/src/test/soapui/surefire-reports</outputFolder>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
+</project>

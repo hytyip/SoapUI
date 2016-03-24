@@ -1,0 +1,42 @@
+Status: FAILED
+Time Taken: 6
+Size: 0
+Timestamp: Wed Jul 08 13:42:53 BST 2015
+TestStep: EDT_GetDocStatus - Failure 1
+
+----------------- Messages ------------------------------
+org.apache.xmlbeans.impl.values.XmlValueOutOfRangeException: string value 'No Authorization' is not a valid enumeration value for type of authType element in Credentials in namespace http://eviware.com/soapui/config
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://hub08to2/EDTWebService/EDTWebService.asmx
+
+---------------- Request ---------------------------
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:edt="EDTwebns">
+   \r
+   <soapenv:Header/>
+   \r
+   <soapenv:Body>
+      \r
+      <edt:EDT_GetDocStatus>
+         \r
+         <!--Optional:-->
+         \r
+         <edt:rsKey>PI25251</edt:rsKey>
+         \r
+         <edt:rlDocId>89080</edt:rlDocId>
+         \r
+         <edt:reStatus>4002</edt:reStatus>
+         \r
+         <!--Optional:-->
+         \r
+         <edt:rsErr>?</edt:rsErr>
+         \r
+      </edt:EDT_GetDocStatus>
+      \r
+   </soapenv:Body>
+   \r
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

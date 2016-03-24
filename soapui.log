@@ -1,0 +1,35 @@
+2015-07-08 15:24:11,993 WARN  [DefaultSoapUICore] Missing folder [C:\Users\TonyYip\workspace\SoapUI\.\ext] for external libraries
+2015-07-08 15:24:12,139 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\TonyYip\soapui-settings.xml]
+2015-07-08 15:24:12,516 INFO  [WsdlProject] Loaded project from [file:C:/Users/TonyYip/workspace/SoapUI/src/test/soapui/Getdocstatus-soapui-project.xml]
+2015-07-08 15:24:12,516 WARN  [WsdlProject] Project 'Getdocstatus' is from a newer version (5.2.0) of soapUI than this (3.6) and parts of it may be incompatible or incorrect. Saving this project with this version of soapUI may cause it to function differently.
+2015-07-08 15:24:12,803 INFO  [SoapUITestCaseRunner] Running soapUI tests in project [Getdocstatus]
+2015-07-08 15:24:12,804 INFO  [SoapUITestCaseRunner] Running Project [Getdocstatus], runType = SEQUENTIAL
+2015-07-08 15:24:12,813 INFO  [SoapUITestCaseRunner] Running soapUI testcase [TestCase 1]
+2015-07-08 15:24:12,817 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatus - Request 1]
+2015-07-08 15:24:13,641 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-07-08 15:24:13,641 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status FAILED
+2015-07-08 15:24:13,641 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Response is a SOAP Fault
+2015-07-08 15:24:13,641 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status FAILED
+2015-07-08 15:24:13,641 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> XPathContains assertion failed for path [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:EDT_GetDocStatusResult] : Exception:Missing content for xpath [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:EDT_GetDocStatusResult] in Response
+2015-07-08 15:24:13,641 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status FAILED
+2015-07-08 15:24:13,641 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> XPathContains assertion failed for path [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] : Exception:Missing content for xpath [declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] in Response
+2015-07-08 15:24:13,641 ERROR [SoapUITestCaseRunner] EDT_GetDocStatus - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI/src/test/soapui/surefire-reports\TestSuite_1-TestCase_1-EDTGetDocStatus__Request_1-0-FAILED.txt]
+2015-07-08 15:24:13,647 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [TestCase 1], time taken: 818ms, status: FAILED
+2015-07-08 15:24:13,647 INFO  [SoapUITestCaseRunner] Running soapUI testcase [TestCase 2]
+2015-07-08 15:24:13,648 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatus - Failure 1]
+2015-07-08 15:24:13,663 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-07-08 15:24:13,663 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status FAILED
+2015-07-08 15:24:13,663 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Response is a SOAP Fault
+2015-07-08 15:24:13,663 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status FAILED
+2015-07-08 15:24:13,663 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> XPathContains comparison failed, expecting [Error], actual was []
+2015-07-08 15:24:13,663 ERROR [SoapUITestCaseRunner] EDT_GetDocStatus - Failure 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI/src/test/soapui/surefire-reports\TestSuite_1-TestCase_2-EDTGetDocStatus__Failure_1-0-FAILED.txt]
+2015-07-08 15:24:13,666 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [TestCase 2], time taken: 14ms, status: FAILED
+2015-07-08 15:24:13,666 INFO  [SoapUITestCaseRunner] Project [Getdocstatus] finished with status [FAILED] in 859ms
